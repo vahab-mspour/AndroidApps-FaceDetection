@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+        
+        <!-- Original Image to be detect face-->
+        <!--suppress AndroidDomInspection -->
+        <ImageView
+            android:id="@+id/originalImageIv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ilhankaya1001" />
+
+        <Button
+            android:id="@+id/detectFaceBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Detect Face" />
+
+        <!-- Face Detected Image -->
+        <ImageView
+            android:id="@+id/croppedImageIv"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
